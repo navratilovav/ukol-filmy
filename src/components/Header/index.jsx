@@ -1,5 +1,5 @@
 import React from 'react';
-import camera from '/src/img/camera.svg';
+import camera from './camera.svg';
 import  './style.css';
 
 const Header = () => {

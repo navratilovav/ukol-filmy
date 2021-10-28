@@ -5,8 +5,8 @@ import './style.css';
  const MovieList = ({movies}) => {
     return (
         <div className="movieListContainer">
-         {movies.map(({title, poster, year, rating, genre, director}, index) => <Movie key={index} title={title} poster={poster} year={year}
-         rating={rating} genre={genre} director={director} />
+         {movies.map(movie => <Movie key={movie.id} id={movie.id} title={movie.title} poster={movie.poster} year={movie.year}
+         rating={movie.rating} genre={movie.genre} director={movie.director} />
         )}
         </div>
     )    
